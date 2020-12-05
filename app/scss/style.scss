@@ -47,7 +47,12 @@
 }
 
 .top {
-    padding: 133px 0 80px;
+    &__inner {
+        padding: 133px 0 80px;
+        background-image: url(../images/top-bg.svg);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+    }
     &__title {
         font-size: 44px;
         line-height: 54px;
@@ -63,14 +68,169 @@
         max-width: 458px;
     }
     &__btn {
-        display: inline-block;
-        font-weight: 700;
-        color: #fff;
-        background-color: $orange;
-        border-radius: 4px;
-        padding: 15px 41px 14px;
         margin-right: 30px;
-        border: none;
+    }
+    &__link {
+        display: inline-block;
+        font-weight: 600;
+        color: $orange;
+        line-height: 24px;
+        text-decoration: underline;
+        padding-left: 25px;
+        position: relative;
+        &::before {
+            content: "";
+            background-image: url(../images/play.svg);
+            position: absolute;
+            left: 0;
+            top: 2px;
+            width: 17px;
+            height: 19px;
+        }
+    }
+}
+
+.tools {
+    padding-top: 110px;
+    &__title {
+        font-size: 36px;
+        line-height: 54px;
+        max-width: 539px;
+        text-align: center;
+        margin: 0 auto 46px;
+        font-weight: 700;
+    }
+    &__inner {
+        padding: 90px;
+        background-image: url(../images/tools-bg.svg);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 15px;
+        margin-bottom: 52px;
+    }
+    &__item {
+        width: 240px;
+        &-img {
+            margin-bottom: 20px;
+        }
+        &-title {
+            font-size: 22px;
+            line-height: 33px;
+            font-weight: 600;
+            margin-bottom: 13px;
+        }
+    }
+    &__link {
+        display: block;
+        margin: 0 auto;
+        background-color: $orange;
+        padding: 15px 32px;
+        border-radius: 4px;
+        color: #fff;
+        font-weight: 700;
+        line-height: 24px;
+        width: 175px;
+        text-align: center;
+    }
+}
+
+.direction {
+    padding: 120px 0 100px;
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 90px;
+        &-content {
+            max-width: 486px;
+        }
+        &-pretitle {
+            margin-bottom: 3px;
+        }
+        &-title {
+            margin-bottom: 22px;
+            font-size: 36px;
+            line-height: 54px;
+            font-weight: 700;
+        }
+        &-titletext {
+            margin-bottom: 30px;
+        }
+        &-subtitle {
+            font-weight: 700;
+            margin-bottom: 13px;
+        }
+        &-text {
+            margin-bottom: 22px;
+        }
+    }
+}
+
+.direction__list-item {
+    margin-bottom: 30px;
+    padding-left: 65px;
+    position: relative;
+    &::before {
+        content: "";
+        background-image: url(../images/direction-icon.svg);
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        left: 0;
+        top: 8px;
+    }
+}
+
+.team {
+    background-image: url(../images/team-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    &__inner {
+        padding: 230px 0 380px;
+        position: relative;
+    }
+    &__box {
+        text-align: center;
+        max-width: 542px;
+        margin: 0 auto;
+    }
+    &__title {
+        font-size: 36px;
+        line-height: 54px;
+        font-weight: 700;
+        margin-bottom: 22px;
+    }
+    &__text {
+        margin-bottom: 45px;
+        color: #567592;
+    }
+    &__item {
+        position: absolute;
+        height: 98px;
+        width: 98px;
+        right: 95px;
+        top: 157px;
+        &-img {
+            width: 98px;
+            height: 98px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        &-text {
+            position: absolute;
+            background-color: #fff;
+            padding: 14px 20px 15px;
+            color: #2f281e;
+            border-radius: 26px;
+            white-space: nowrap;
+            right: 75px;
+            top: -30px;
+        }
     }
 }
 
