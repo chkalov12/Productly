@@ -1,9 +1,16 @@
 $(function() {
-    //  $('.header__btn').click(function(){
-    //  	$('html, body').animate({scrollTop: $(document).height() - $(window).height()}, 15000);
-    //  	return false;
-    //    });
+    $('.menu__btn').on('click', function() {
+        $('.menu__list').toggleClass('menu__list--active')
+    });
 
+    $('.strateg__slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        arrows: false,
+        dots: true
+    });
 
 
 

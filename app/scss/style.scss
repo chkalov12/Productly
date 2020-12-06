@@ -25,6 +25,40 @@
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
     }
+    &--active {
+        transform: translateY(0);
+    }
+}
+
+.menu__btn {
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+    span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: #BCD0E5;
+        position: absolute;
+        left: 0;
+        top: 14px;
+    }
+    &::after,
+    &::before {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 3px;
+        background-color: #BCD0E5;
+        left: 0;
+    }
+    &::after {
+        top: 0;
+    }
+    &::before {
+        bottom: 0;
+    }
 }
 
 .user-nav {
@@ -213,13 +247,31 @@
         position: absolute;
         height: 98px;
         width: 98px;
-        right: 95px;
-        top: 157px;
         &-img {
             width: 98px;
             height: 98px;
             border-radius: 50%;
             overflow: hidden;
+        }
+        &--1 {
+            right: 95px;
+            top: 157px;
+        }
+        &--2 {
+            left: 0px;
+            top: 200px;
+        }
+        &--3 {
+            right: 0px;
+            bottom: 270px;
+        }
+        &--4 {
+            right: 33%;
+            bottom: 130px;
+        }
+        &--5 {
+            left: 259px;
+            bottom: 250px;
         }
         &-text {
             position: absolute;
@@ -230,8 +282,154 @@
             white-space: nowrap;
             right: 75px;
             top: -30px;
+            &--left {
+                left: 75px;
+                right: auto;
+            }
         }
     }
+}
+
+.team__item-text--right::after,
+.team__item-text--right::before,
+.team__item-text--left::after,
+.team__item-text--left::before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.team__item-text--right::after,
+.team__item-text--left::after {
+    width: 17px;
+    height: 17px;
+    bottom: -7px;
+    right: 30px;
+}
+
+.team__item-text--right::before,
+.team__item-text--left::before {
+    width: 9px;
+    height: 9px;
+    bottom: -17px;
+    right: 9px;
+}
+
+.team__item-text--left::before {
+    left: 9px;
+}
+
+.team__item-text--left::after {
+    left: 30px;
+}
+
+.strateg {
+    padding: 30px 0 120px;
+    &__title {
+        font-size: 34px;
+        line-height: 51px;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+    &__text {
+        margin-bottom: 55px;
+    }
+    &__slider {
+        margin: 0 -20px;
+    }
+    &__item {
+        padding: 0 20px;
+        &:hover {
+            .strateg__item-title {
+                color: $orange;
+            }
+        }
+    }
+    &__img {
+        width: 348px;
+        height: 185px;
+        object-fit: cover;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        margin-bottom: 25px;
+    }
+    &__date {
+        a {
+            font-weight: 700;
+        }
+        margin-bottom: 12px;
+        line-height: 28px;
+    }
+    &__item-title {
+        font-size: 24px;
+        line-height: 34px;
+        font-weight: 700;
+        transition: all 0.3s;
+        width: 294px;
+        margin-bottom: 50px;
+    }
+}
+
+.slick-dots {
+    text-align: center;
+    button {
+        display: none;
+    }
+    li {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: #EFEFEF;
+        margin-right: 10px;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+    .slick-active {
+        background-color: $orange;
+    }
+}
+
+.footer {
+    &__inner {
+        border-top: 1px solid rgba(188, 208, 229, 0.496913);
+        padding: 105px 0 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__menu {
+        width: 135px;
+    }
+    &__link {
+        line-height: 35px;
+    }
+    form {
+        width: 330px;
+    }
+    &__input {
+        display: inline-block;
+        width: 100%;
+        height: 48px;
+        border: 1px solid #BCD0E5;
+        border-radius: 4px;
+        padding: 0 15px;
+        margin-bottom: 21px;
+        &::placeholder {
+            color: #BCD0E5;
+        }
+    }
+    &__btn {
+        padding: 8px 15px;
+    }
+}
+
+.footer__menu-title,
+.footer__form-text {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 35px;
+    max-width: 283px;
 }
 
 //header end

@@ -1,33 +1,57 @@
-// @media (max-width: 1220px) {
-//     .form {
-//         input {
-//             max-width: 50%;
-//             margin-top: 15px;
-//             display: block;
-//             &+input {
-//                 margin-left: 0;
-//             }
-//         }
-//     }
-// }
-// @media (max-width: 1150px) {
-//     .advantages__inner,
-//     .blog__inner,
-//     .team__inner {
-//         flex-wrap: wrap;
-//         justify-content: space-around;
-//     }
-//     .advantages__item,
-//     .blog__item,
-//     .team__item {
-//         max-width: 400px;
-//         margin-bottom: 20px;
-//     }
-//     .team__item {
-//         margin-bottom: 40px;
-//     }
-//     .phone__img {
-//         margin-right: 0;
-//         max-width: 450px;
-//     }
-// }
+@media (max-width: 1220px) {}
+
+@media (max-width: 1020px) {}
+
+@media (max-width: 880px) {
+    .header__inner {
+        flex-wrap: wrap;
+        height: auto;
+        padding-top: 25px;
+    }
+    .menu {
+        order: 1;
+        width: 100%;
+    }
+    .menu__list {
+        justify-content: flex-end;
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 524px) {
+    .header__inner {
+        display: block;
+    }
+    .menu__list {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background-color: #fff;
+        transform: translateY(-300%);
+        transition: all 0.3s;
+        &-item+&-item {
+            margin-left: 0;
+        }
+        &-link {
+            padding: 10px 0;
+            display: block;
+        }
+        &--active {
+            transform: translateY(0);
+        }
+    }
+    .menu__btn {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 10px;
+    }
+    .user-nav {
+        margin-right: 0;
+        margin-left: 0;
+        text-align: center;
+        padding-top: 30px;
+    }
+}
