@@ -9,6 +9,11 @@
     height: 78px;
 }
 
+.logo {
+    z-index: 20;
+    position: relative;
+}
+
 .menu {
     margin-left: auto;
 }
@@ -24,9 +29,6 @@
         line-height: 28px;
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
-    }
-    &--active {
-        transform: translateY(0);
     }
 }
 
@@ -135,7 +137,7 @@
         font-weight: 700;
     }
     &__inner {
-        padding: 90px;
+        padding: 90px 0;
         background-image: url(../images/tools-bg.svg);
         background-repeat: no-repeat;
         background-position: center bottom;
@@ -263,7 +265,7 @@
         }
         &--3 {
             right: 0px;
-            bottom: 270px;
+            bottom: 250px;
         }
         &--4 {
             right: 33%;

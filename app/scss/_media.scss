@@ -1,6 +1,48 @@
 @media (max-width: 1220px) {}
 
-@media (max-width: 1020px) {}
+@media (max-width: 1175px) {
+    .strateg__img,
+    .strateg__item-linkimg {
+        width: 100%;
+        height: 250px;
+    }
+    .strateg__item-title {
+        max-width: 350px;
+        width: 100%;
+    }
+    .strateg__slider {
+        margin: 0;
+    }
+    .strateg__item {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .top__inner {
+        background-image: none;
+        padding: 80px 0 60px;
+        display: block;
+        text-align: center;
+    }
+    .top__title,
+    .top__text {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 700px;
+    }
+    .tools__items {
+        flex-wrap: wrap;
+    }
+    .tools__item {
+        width: 50%;
+        margin-bottom: 30px;
+        padding-right: 15px;
+    }
+    .direction__item-img {
+        width: 40%;
+    }
+}
 
 @media (max-width: 880px) {
     .header__inner {
@@ -16,12 +58,52 @@
         justify-content: flex-end;
         padding-top: 30px;
     }
+    button,
+    .user-nav__link {
+        padding: 8px 20px 8px;
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .direction__item-img {
+        width: 80%;
+        order: -1;
+        margin: 0 auto 30px;
+    }
+    .direction__item {
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+    .direction {
+        padding: 60px 0 50px;
+    }
+    .team__item {
+        display: none;
+    }
+    .team__inner {
+        padding: 80px 0 100px;
+    }
+    .strateg {
+        padding-bottom: 30px;
+    }
+    .footer__inner {
+        flex-wrap: wrap;
+    }
+    .footer__form {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .footer {
+        .logo {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+    .footer__menu {
+        text-align: center;
+    }
 }
 
 @media (max-width: 524px) {
-    .header__inner {
-        display: block;
-    }
     .menu__list {
         display: block;
         position: absolute;
@@ -30,7 +112,8 @@
         text-align: center;
         background-color: #fff;
         transform: translateY(-300%);
-        transition: all 0.3s;
+        transition: all 1.5s;
+        top: 67px;
         &-item+&-item {
             margin-left: 0;
         }
@@ -40,6 +123,7 @@
         }
         &--active {
             transform: translateY(0);
+            transition: all 0.7s;
         }
     }
     .menu__btn {
@@ -53,5 +137,50 @@
         margin-left: 0;
         text-align: center;
         padding-top: 30px;
+    }
+    .top__btn {
+        display: block;
+        margin: 0 auto 15px;
+    }
+    .top__title {
+        font-size: 28px;
+        line-height: 35px;
+    }
+    body,
+    p {
+        font-size: 12px;
+        line-height: 21px;
+    }
+    .tools__item {
+        width: 100%;
+        margin-bottom: 30px;
+        padding-right: 0px;
+        text-align: center;
+    }
+    .direction__item-title,
+    .tools__title,
+    .team__title,
+    .strateg__title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .strateg__item-title {
+        font-size: 21px;
+        line-height: 26px;
+    }
+    .tools {
+        padding-top: 10px;
+        &__inner {
+            padding: 20px 0;
+        }
+        &__items {
+            margin-bottom: 25px;
+        }
+    }
+    .team__inner {
+        padding: 40px 0 50px;
+    }
+    .strateg__item {
+        padding: 0px;
     }
 }

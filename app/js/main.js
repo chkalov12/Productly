@@ -9,7 +9,20 @@ $(function() {
         autoplay: true,
         autoplaySpeed: 5000,
         arrows: false,
-        dots: true
+        dots: true,
+        responsive: [{
+            breakpoint: 1176,
+            settings: {
+                slidesToShow: 2,
+            }
+        }],
+        responsive: [{
+            breakpoint: 769,
+            settings: {
+                slidesToShow: 1,
+            }
+        }]
+
     });
 
 
