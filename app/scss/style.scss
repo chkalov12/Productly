@@ -85,9 +85,10 @@
 .top {
     &__inner {
         padding: 133px 0 80px;
-        background-image: url(../images/top-bg.svg);
+        background-image: url(../images/top.jpg);
         background-repeat: no-repeat;
-        background-position: bottom right;
+        background-position: bottom left;
+        text-align: right;
     }
     &__title {
         font-size: 44px;
@@ -95,6 +96,7 @@
         font-weight: 700;
         margin-bottom: 30px;
         max-width: 518px;
+        margin-left: auto;
     }
     &__text {
         font-weight: 400;
@@ -102,6 +104,7 @@
         line-height: 28px;
         margin-bottom: 45px;
         max-width: 458px;
+        margin-left: auto;
     }
     &__btn {
         margin-right: 30px;
